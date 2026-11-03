@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/InterVariable.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@theme {
+    /* Цвета */
+
+    --font-inter: "Inter", sans-serif;
+    --color-gray-gray-50: #fafafa;
+    --color-gray-gray-100: #f7fafc;
+    --color-gray-gray-200: #edf2f7;
+    --color-gray-gray-300: #e2e8f0;
+    --color-gray-gray-400: #cbd5e0;
+    --color-gray-gray-500: #a0aec0;
+    --color-gray-gray-600: #718096;
+    --color-gray-gray-700: #4a5568;
+    --color-gray-gray-800: #2d3748;
+    --color-gray-gray-900: #1a202c;
+    --color-brand-secondary-bg: #f76680;
+    --color-brand-dark-bg: #16192c;
+    --color-brand-info-bg: #68dbf2;
+    --color-brand-danger-bg: #f16063;
+    --color-brand-warning-bg: #f7936f;
+    --color-brand-success-bg: #66cb9f;
+    --color-brand-tertiary-bg: #ff92ae;
+    --color-brand-primary-bg: #57007b;
+    --color-shade-primary-lite-bg: #e7daed;
+    --color-shade-secondary-lite-bg: #ffe7eb;
+    --color-shade-terriary-lite-bg: #ffadba;
+    --color-shade-success-lite-bg: #e0ffef;
+    --color-shade-warning-lite-bg: #ffefe8;
+    --color-shade-danger-lite-bg: #f68e87;
+    --color-shade-info-lite-bg: #e3fcff;
+    --color-shade-dark-lite-bg: #505780;
+    --color-shade-light-background: #f9f9ff;
+    --color-shade-pink-lite: #ffe9e9;
+    --color-base-black: #000000;
+    --color-base-white: #ffffff;
+    --color-base-pink: #8e5efa;
+    --color-shades-lite-green: #e7feec;
+
+    /* Градиенты */
+
+    --gradient-primary-bg: linear-gradient(90deg, #F76680, #57007B);
+    --gradient-secondary-bg: linear-gradient(90deg, #F1F1F5, #E4ECF7);
+    --gradient-tertiary-bg: linear-gradient(90deg, #FF92AE, #FF3D9A);
+    --gradient-success-bg: linear-gradient(90deg, #67E9F1, #24E795);
+    --gradient-warning-bg: linear-gradient(90deg, #FFEF5E, #F7936F);
+    --gradient-danger-bg: linear-gradient(90deg, #FFC656, #F16063);
+    --gradient-info-bg: linear-gradient(90deg, #68DBF2, #509CF5);
+    --gradient-dark-bg: linear-gradient(90deg, #29272E, #27272E);
+}
+
+/* Шрифты */
+
+@utility text-headings-h6 {
+    @apply font-inter text-base font-medium leading-6.25;
+}
+
+@utility text-headings-h6 {
+    @apply font-inter text-base font-medium leading-6.25;
+}
+
+@utility btn-lg {
+    @apply font-inter text-sm font-semibold leading-3.5;
+}
+
