@@ -46,7 +46,7 @@
 
     /* Градиенты */
 
-    --gradient-primary-bg: linear-gradient(90deg, #F76680, #57007B);
+    --gradient-primary-bg: linear-gradient(45deg, #57007B, #F76680);
     --gradient-secondary-bg: linear-gradient(90deg, #F1F1F5, #E4ECF7);
     --gradient-tertiary-bg: linear-gradient(90deg, #FF92AE, #FF3D9A);
     --gradient-success-bg: linear-gradient(90deg, #67E9F1, #24E795);
@@ -62,11 +62,7 @@
     @apply font-inter text-base font-medium leading-6.25;
 }
 
-@utility text-headings-h6 {
-    @apply font-inter text-base font-medium leading-6.25;
-}
-
-@utility btn-lg {
+@utility text-btn-lg {
     @apply font-inter text-sm font-semibold leading-3.5;
 }
 
