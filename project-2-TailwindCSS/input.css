@@ -66,3 +66,7 @@
     @apply font-inter text-sm font-semibold leading-3.5;
 }
 
+@utility display-h1-bold {
+    @apply font-inter text-[53px] font-extrabold leading-17.75;
+}
+
