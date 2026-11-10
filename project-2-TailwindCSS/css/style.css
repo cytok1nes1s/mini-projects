@@ -23,8 +23,10 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-extrabold: 800;
+    --tracking-tight: -0.025em;
     --tracking-normal: 0em;
     --tracking-wide: 0.025em;
+    --tracking-widest: 0.1em;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-inter: "Inter", sans-serif;
@@ -183,6 +185,12 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
@@ -192,8 +200,17 @@
   .mt-18\.75 {
     margin-top: calc(var(--spacing) * 18.75);
   }
+  .mt-\[-1\] {
+    margin-top: -1;
+  }
   .mr-auto {
     margin-right: auto;
+  }
+  .mb-1 {
+    margin-bottom: var(--spacing);
+  }
+  .block {
+    display: block;
   }
   .flex {
     display: flex;
@@ -209,6 +226,12 @@
   }
   .h-11\.25 {
     height: calc(var(--spacing) * 11.25);
+  }
+  .h-88 {
+    height: calc(var(--spacing) * 88);
+  }
+  .h-88\.75 {
+    height: calc(var(--spacing) * 88.75);
   }
   .h-140 {
     height: calc(var(--spacing) * 140);
@@ -230,6 +253,9 @@
   }
   .w-187 {
     width: calc(var(--spacing) * 187);
+  }
+  .w-full {
+    width: 100%;
   }
   .max-w-360 {
     max-width: calc(var(--spacing) * 360);
@@ -292,8 +318,8 @@
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
   }
-  .py-\[103px\] {
-    padding-block: 103px;
+  .pt-1 {
+    padding-top: var(--spacing);
   }
   .pt-17 {
     padding-top: calc(var(--spacing) * 17);
@@ -312,6 +338,16 @@
   }
   .pl-26 {
     padding-left: calc(var(--spacing) * 26);
+  }
+  .text-lite-h1 {
+    font-family: var(--font-inter);
+    font-size: 45px;
+    --tw-leading: calc(var(--spacing) * 17.75);
+    line-height: calc(var(--spacing) * 17.75);
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+    --tw-tracking: 0.026em;
+    letter-spacing: 0.026em;
   }
   .text-btn-lg {
     font-family: var(--font-inter);
@@ -339,21 +375,89 @@
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
   }
-  .text-lite-h1 {
-    font-family: var(--font-inter);
-    font-size: 45px;
-    --tw-leading: calc(var(--spacing) * 17.75);
-    line-height: calc(var(--spacing) * 17.75);
-    --tw-font-weight: var(--font-weight-light);
-    font-weight: var(--font-weight-light);
+  .tracking-\[-0\.0\] {
+    --tw-tracking: -0.0;
+    letter-spacing: -0.0;
+  }
+  .tracking-\[-0\.000em\] {
+    --tw-tracking: -0.000em;
+    letter-spacing: -0.000em;
+  }
+  .tracking-\[-0\.000001em\] {
+    --tw-tracking: -0.000001em;
+    letter-spacing: -0.000001em;
+  }
+  .tracking-\[-0\.00001em\] {
+    --tw-tracking: -0.00001em;
+    letter-spacing: -0.00001em;
+  }
+  .tracking-\[-0\.0001em\] {
+    --tw-tracking: -0.0001em;
+    letter-spacing: -0.0001em;
+  }
+  .tracking-\[-0\.001em\] {
+    --tw-tracking: -0.001em;
+    letter-spacing: -0.001em;
+  }
+  .tracking-\[-0\.02\] {
+    --tw-tracking: -0.02;
+    letter-spacing: -0.02;
+  }
+  .tracking-\[-0\.02em\] {
+    --tw-tracking: -0.02em;
+    letter-spacing: -0.02em;
+  }
+  .tracking-\[-0\.005em\] {
+    --tw-tracking: -0.005em;
+    letter-spacing: -0.005em;
+  }
+  .tracking-\[0\.000001em\] {
+    --tw-tracking: 0.000001em;
+    letter-spacing: 0.000001em;
+  }
+  .tracking-\[0\.001\] {
+    --tw-tracking: 0.001;
+    letter-spacing: 0.001;
+  }
+  .tracking-\[0\.01\] {
+    --tw-tracking: 0.01;
+    letter-spacing: 0.01;
+  }
+  .tracking-\[0\.02\] {
+    --tw-tracking: 0.02;
+    letter-spacing: 0.02;
+  }
+  .tracking-\[0\.005\] {
+    --tw-tracking: 0.005;
+    letter-spacing: 0.005;
+  }
+  .tracking-\[0\.009\] {
+    --tw-tracking: 0.009;
+    letter-spacing: 0.009;
+  }
+  .tracking-\[0\] {
+    --tw-tracking: 0;
+    letter-spacing: 0;
+  }
+  .tracking-\[\[-0\.000001em\]\] {
+    --tw-tracking: [-0.000001em];
+    letter-spacing: [-0.000001em];
   }
   .tracking-normal {
     --tw-tracking: var(--tracking-normal);
     letter-spacing: var(--tracking-normal);
   }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
   .tracking-wide {
     --tw-tracking: var(--tracking-wide);
     letter-spacing: var(--tracking-wide);
+  }
+  .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
   }
   .text-gray-50 {
     color: var(--color-gray-50);
@@ -387,6 +491,11 @@
   src: url("/fonts/InterVariable.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
+}
+@layer base {
+  html {
+    font-optical-sizing: none;
+  }
 }
 @property --tw-rotate-x {
   syntax: "*";
