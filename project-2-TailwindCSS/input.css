@@ -75,6 +75,10 @@
 }
 
 @utility text-lite-h1 {
-    @apply font-inter text-[45px] font-light leading-17.75 tracking-[0.026em];
+    @apply font-inter text-[45px] font-light leading-17.75;
+}
+
+@utility text-default-lg {
+    @apply font-inter text-lg font-normal leading-9;
 }
 
