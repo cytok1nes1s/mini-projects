@@ -82,3 +82,6 @@
     @apply font-inter text-lg font-normal leading-9;
 }
 
+@utility text-headings-h2 {
+    @apply font-inter text-[35px] font-bold leading-13.75;
+}
