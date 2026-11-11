@@ -8,7 +8,6 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-900: oklch(21% 0.034 264.665);
@@ -186,12 +185,6 @@
   .relative {
     position: relative;
   }
-  .left-1 {
-    left: var(--spacing);
-  }
-  .left-1\/2 {
-    left: calc(1 / 2 * 100%);
-  }
   .left-\[36\%\] {
     left: 36%;
   }
@@ -212,9 +205,6 @@
   }
   .mt-14\.25 {
     margin-top: calc(var(--spacing) * 14.25);
-  }
-  .mt-\[56px\] {
-    margin-top: 56px;
   }
   .mr-auto {
     margin-right: auto;
@@ -237,6 +227,9 @@
   .table {
     display: table;
   }
+  .h-1 {
+    height: var(--spacing);
+  }
   .h-11 {
     height: calc(var(--spacing) * 11);
   }
@@ -258,11 +251,20 @@
   .h-140\.25 {
     height: calc(var(--spacing) * 140.25);
   }
+  .h-150 {
+    height: calc(var(--spacing) * 150);
+  }
+  .h-150\.75 {
+    height: calc(var(--spacing) * 150.75);
+  }
   .h-180 {
     height: calc(var(--spacing) * 180);
   }
   .h-180\.5 {
     height: calc(var(--spacing) * 180.5);
+  }
+  .h-\[603px\] {
+    height: 603px;
   }
   .w-18 {
     width: calc(var(--spacing) * 18);
@@ -308,8 +310,17 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .overflow-x-clip {
+    overflow-x: clip;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
   }
   .rounded-\[5px\] {
     border-radius: 5px;
@@ -320,9 +331,6 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .bg-amber-400 {
-    background-color: var(--color-amber-400);
   }
   .bg-brand-primary-bg {
     background-color: var(--color-brand-primary-bg);
@@ -345,9 +353,6 @@
   .px-7\.25 {
     padding-inline: calc(var(--spacing) * 7.25);
   }
-  .px-\[29px\] {
-    padding-inline: 29px;
-  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -363,11 +368,11 @@
   .py-3\.75 {
     padding-block: calc(var(--spacing) * 3.75);
   }
-  .py-\[1\] {
-    padding-block: 1;
+  .pt-11 {
+    padding-top: calc(var(--spacing) * 11);
   }
-  .py-\[16px\] {
-    padding-block: 16px;
+  .pt-11\.5 {
+    padding-top: calc(var(--spacing) * 11.5);
   }
   .pt-17 {
     padding-top: calc(var(--spacing) * 17);
@@ -375,14 +380,26 @@
   .pt-17\.25 {
     padding-top: calc(var(--spacing) * 17.25);
   }
+  .pt-\[46px\] {
+    padding-top: 46px;
+  }
   .pr-14 {
     padding-right: calc(var(--spacing) * 14);
   }
   .pr-14\.25 {
     padding-right: calc(var(--spacing) * 14.25);
   }
+  .pb-14\.25 {
+    padding-bottom: calc(var(--spacing) * 14.25);
+  }
   .pb-23 {
     padding-bottom: calc(var(--spacing) * 23);
+  }
+  .pb-\[57\] {
+    padding-bottom: 57;
+  }
+  .pb-\[57px\] {
+    padding-bottom: 57px;
   }
   .pl-26 {
     padding-left: calc(var(--spacing) * 26);
