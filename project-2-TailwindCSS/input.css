@@ -54,6 +54,10 @@
     --gradient-danger-bg: linear-gradient(90deg, #FFC656, #F16063);
     --gradient-info-bg: linear-gradient(90deg, #68DBF2, #509CF5);
     --gradient-dark-bg: linear-gradient(90deg, #29272E, #27272E);
+
+    /* Тени */
+
+    --shadow-card-light: 0 4px 30px 0 rgba(0,0,0,0.05);
 }
 
 /* Шрифты */
@@ -84,4 +88,11 @@
 
 @utility text-headings-h2 {
     @apply font-inter text-[35px] font-bold leading-13.75;
+}
+
+@utility border-gradient-primary {
+    border: 1px solid transparent;
+    background: 
+        linear-gradient(var(--color-gray-gray-50), var(--color-gray-gray-50)) padding-box,
+        var(--gradient-primary-bg) border-box;
 }
