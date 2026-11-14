@@ -90,9 +90,26 @@
     @apply font-inter text-[35px] font-bold leading-13.75;
 }
 
+@utility text-headings-h4 {
+    @apply font-inter text-[20px] font-semibold leading-[136.5%];
+}
+
+@utility text-paragraphs-default {
+    @apply font-inter text-[14px] font-normal leading-[162%]
+}
+
+/* Границы */
+
 @utility border-gradient-primary {
     border: 1px solid transparent;
     background: 
         linear-gradient(var(--color-gray-gray-50), var(--color-gray-gray-50)) padding-box,
         var(--gradient-primary-bg) border-box;
+}
+
+@utility border-gradient-primary-circle {
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: linear-gradient(var(--color-gray-gray-50), var(--color-gray-gray-50)) padding-box,
+    var(--gradient-primary-bg) border-box;
 }
