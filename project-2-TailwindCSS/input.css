@@ -90,6 +90,10 @@
     @apply font-inter text-[35px] font-bold leading-13.75;
 }
 
+@utility text-headings-h3 {
+    @apply font-inter text-[28px] font-semibold leading-[136%];
+}
+
 @utility text-headings-h4 {
     @apply font-inter text-[20px] font-semibold leading-[136.5%];
 }
