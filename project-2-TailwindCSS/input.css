@@ -82,6 +82,10 @@
     @apply font-inter text-[45px] font-light leading-17.75;
 }
 
+@utility text-lite-h2 {
+    @apply font-inter text-[35px] font-normal leading-13.75;
+}
+
 @utility text-default-lg {
     @apply font-inter text-lg font-normal leading-9;
 }
