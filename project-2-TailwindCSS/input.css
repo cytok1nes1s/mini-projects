@@ -99,11 +99,15 @@
 }
 
 @utility text-headings-h4 {
-    @apply font-inter text-[20px] font-semibold leading-[136.5%];
+    @apply font-inter text-xl font-semibold leading-[136.5%];
 }
 
 @utility text-paragraphs-default {
-    @apply font-inter text-[14px] font-normal leading-[162%]
+    @apply font-inter text-sm font-normal leading-[162%]
+}
+
+@utility text-paragraphs-para-1 {
+    @apply font-inter text-lg font-normal leading-7.5;
 }
 
 /* Границы */
